@@ -1,10 +1,15 @@
-import { text } from "@/languages_text/text";
+"use client"
+import { useEffect } from "react";
 
-
-export default function Home() {
+export default function Page() {
+  useEffect(() => {
+    if (navigator.language.includes("en")) {
+      location.href = "/en"
+    } else {
+      location.href = "/fr"
+    }
+  });
   return (
-    <div>
-      <h1>{ text["fr"]["Homepage"]["title"] }</h1>
-    </div>
+    <></>
   );
 }
