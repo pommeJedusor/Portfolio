@@ -20,6 +20,8 @@ export const text = {
     },
     "ProjectsPage": {
       "title": "My projects",
+      "code-site-link-text": ", the code of the site can be found there",
+      "code-api-link-text": ", the code of the api can be found there",
       "Projects": [
         {
           "name": "Chesspomme",
@@ -37,7 +39,7 @@ export const text = {
         },
         {
           "name": "Wordle Solver",
-          "description": "",
+          "description": "I'm not gonna describe this one here as I wrote an extensive one on the site itself (in the Details section)",
           "link-project": "https://wordle-solver.chesspomme.com/",
           "github-site-link": "https://github.com/pommeJedusor/wordle_solver_site",
           "github-api-link": "https://github.com/pommeJedusor/wordle_solver_api",
@@ -65,6 +67,8 @@ export const text = {
     },
     "ProjectsPage": {
       "title": "Mes projets",
+      "code-site-link-text": ", le code du site",
+      "code-api-link-text": ", le code de l'api",
       "Projects": [
         {
           "name": "Chesspomme",
@@ -82,7 +86,7 @@ export const text = {
         },
         {
           "name": "Wordle Solver",
-          "description": "",
+          "description": "Je ne vais pas décrire ici celui-ci étant donné que je l'ai déjà fait sur le site lui-même (dans la section Details)",
           "link-project": "https://wordle-solver.chesspomme.com/",
           "github-site-link": "https://github.com/pommeJedusor/wordle_solver_site",
           "github-api-link": "https://github.com/pommeJedusor/wordle_solver_api",

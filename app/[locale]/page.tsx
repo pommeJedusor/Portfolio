@@ -18,11 +18,11 @@ export default async function Home({params}: {params: Promise<{locale: Locale}>}
           {text[locale]["ProjectsPage"]["Projects"][i]["description"]}
           {/* put github links if there are */}
           {text[locale]["ProjectsPage"]["Projects"][i]["github-site-link"] ?
-            (<a href={text[locale]["ProjectsPage"]["Projects"][i]["github-site-link"]}className="text-red-700 hover:text-red-900">, the code of the site can be found there</a>) :
+            (<a href={text[locale]["ProjectsPage"]["Projects"][i]["github-site-link"]}className="text-red-700 hover:text-red-900">{text[locale]["ProjectsPage"]["code-site-link-text"]}</a>) :
             (<></>)
           }
           {text[locale]["ProjectsPage"]["Projects"][i]["github-api-link"] ?
-            (<a href={text[locale]["ProjectsPage"]["Projects"][i]["github-api-link"]}className="text-red-700 hover:text-red-900">, the code of the api can be found there</a>) :
+            (<a href={text[locale]["ProjectsPage"]["Projects"][i]["github-api-link"]}className="text-red-700 hover:text-red-900">{text[locale]["ProjectsPage"]["code-api-link-text"]}</a>) :
             (<></>)
           }
         </p>
