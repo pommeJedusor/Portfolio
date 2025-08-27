@@ -9,8 +9,8 @@ export default async function Home({params}: {params: Promise<{locale: Locale}>}
   for (let i=0;i<text[locale]["ProjectsPage"]["Projects"].length;i++){
     projects.push(
       <div key={i} className="w-3/4 m-4">
-        <h3 className="text-2xl text-left mb-1 text-red-700 hover:text-red-900">
-          <a href={text[locale]["ProjectsPage"]["Projects"][i]["link-project"]}>
+        <h3 className="text-2xl text-left mb-1 text-red-700">
+          <a className="hover:text-red-900" href={text[locale]["ProjectsPage"]["Projects"][i]["link-project"]}>
             {text[locale]["ProjectsPage"]["Projects"][i]["name"]}
           </a>
         </h3>
