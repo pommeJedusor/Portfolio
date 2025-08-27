@@ -44,6 +44,13 @@ export const text = {
           "github-site-link": "https://github.com/pommeJedusor/wordle_solver_site",
           "github-api-link": "https://github.com/pommeJedusor/wordle_solver_api",
         },
+        {
+          "name": "deployment",
+          "description": "I have a vps, that I use for all of my deployments, I use github workflows to automate docker image builds and deployments on the dockerhub I use cron to automate the deployment of programs on the vps, the backups and domain renewals with certbot",
+          "link-project": "",
+          "github-site-link": "",
+          "github-api-link": "",
+        },
       ]
     }
   },
@@ -90,6 +97,13 @@ export const text = {
           "link-project": "https://wordle-solver.chesspomme.com/",
           "github-site-link": "https://github.com/pommeJedusor/wordle_solver_site",
           "github-api-link": "https://github.com/pommeJedusor/wordle_solver_api",
+        },
+        {
+          "name": "Déploiements",
+          "description": "J'ai un VPS que j'utilise pour tous mes déploiements. J'utilise les workflows GitHub pour automatiser le build et déploiement d'images sur le Docker Hub. J'utilise Cron pour automatiser le déploiement de programmes sur le VPS, ainsi que pour les backups et pour le renouvellement de domaines via Certbot",
+          "link-project": "",
+          "github-site-link": "",
+          "github-api-link": "",
         },
       ]
     }
