@@ -19,7 +19,7 @@ export const text = {
       }
     },
     "ProjectsPage": {
-      "title": "My projects",
+      "title": "My Projects",
       "code-site-link-text": ", the code of the site can be found there",
       "code-api-link-text": ", the code of the api can be found there",
       "Projects": [
@@ -52,7 +52,11 @@ export const text = {
           "github-api-link": "",
         },
       ]
-    }
+    },
+    "About": {
+      "title": "Who Am I",
+      "content": "I am a nerd (I use Neovim and Arch, by the way) who loves to learn how things work and to play with them (and more often than not, break them). I have a good knowledge of front-end, back-end, Linux, Networks, and servers because of my personal and professional experiences, though I perform better and prefer tasks that have a higher level of complexity. I'm also deeply interested in philosophy (particularly meta-ethics and ethics) and recently got obsessed again over mnemonic",
+    },
   },
   "fr": {
     "Homepage": {
@@ -73,7 +77,7 @@ export const text = {
       }
     },
     "ProjectsPage": {
-      "title": "Mes projets",
+      "title": "Mes Projets",
       "code-site-link-text": ", le code du site",
       "code-api-link-text": ", le code de l'api",
       "Projects": [
@@ -106,6 +110,10 @@ export const text = {
           "github-api-link": "",
         },
       ]
-    }
+    },
+    "About": {
+      "title": "Qui Suis-Je?",
+      "content": "Je suis un nerd (j'utilise Neovim et Arch, btw) qui aime apprendre comment les choses fonctionnent et jouer avec elles (et les casser plus souvent que j'aimerais). J'ai une bonne connaissance du front-end, du back-end, de Linux, de réseaux et des serveurs, de par mes expériences personnelles et professionnelles, bien que je sois plus performant et que je préfère les tâches qui présentent un niveau de complexité plus élevé. Je m'intéresse aussi beaucoup à la philosophie (particulièrement méta-éthique/éthique) et je suis récemment redevenu obsédé par la mnémotechnique.",
+    },
   }
 }

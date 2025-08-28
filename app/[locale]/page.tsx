@@ -29,6 +29,7 @@ export default async function Home({params}: {params: Promise<{locale: Locale}>}
       </div>
     )
   }
+
   return (
     <div>
       <NavBar locale={locale}/>
@@ -36,6 +37,14 @@ export default async function Home({params}: {params: Promise<{locale: Locale}>}
       <div className="flex flex-col items-center">
         <h2 className="text-3xl text-center mt-20">{text[locale]["ProjectsPage"]["title"]}</h2>
         {projects}
+      </div>
+      <div className="flex flex-col items-center">
+        <div className="w-3/4 m-4">
+          <h2 className="text-3xl text-center mt-20">{text[locale]["About"]["title"]}</h2>
+          <p className="text-lg">
+            {text[locale]["About"]["content"]}
+          </p>
+        </div>
       </div>
     </div>
   );
