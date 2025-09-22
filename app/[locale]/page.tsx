@@ -7,6 +7,15 @@ export default async function Home({params}: {params: Promise<{locale: Locale}>}
   const {locale} = await params;
   const projects = [];
   for (let i=0;i<text[locale]["ProjectsPage"]["Projects"].length;i++){
+    const links = [];
+    for (let j=0;j<text[locale]["ProjectsPage"]["Projects"][i]["github-links"].length;j++){
+      links.push(
+        <a key={j} href={text[locale]["ProjectsPage"]["Projects"][i]["github-links"][j]["link"]}className="text-red-700 hover:text-red-900">
+          {j==0 ? ' ' : ', '}{text[locale]["ProjectsPage"]["Projects"][i]["github-links"][j]["text"]}
+        </a>
+      );
+    }
+
     projects.push(
       <div key={i} className="w-3/4 m-4">
         <h3 className="text-2xl text-left mb-1 text-red-700">
@@ -16,15 +25,7 @@ export default async function Home({params}: {params: Promise<{locale: Locale}>}
         </h3>
         <p className="text-lg">
           {text[locale]["ProjectsPage"]["Projects"][i]["description"]}
-          {/* put github links if there are */}
-          {text[locale]["ProjectsPage"]["Projects"][i]["github-site-link"] ?
-            (<a href={text[locale]["ProjectsPage"]["Projects"][i]["github-site-link"]}className="text-red-700 hover:text-red-900">{text[locale]["ProjectsPage"]["code-site-link-text"]}</a>) :
-            (<></>)
-          }
-          {text[locale]["ProjectsPage"]["Projects"][i]["github-api-link"] ?
-            (<a href={text[locale]["ProjectsPage"]["Projects"][i]["github-api-link"]}className="text-red-700 hover:text-red-900">{text[locale]["ProjectsPage"]["code-api-link-text"]}</a>) :
-            (<></>)
-          }
+          {links}
         </p>
       </div>
     )
