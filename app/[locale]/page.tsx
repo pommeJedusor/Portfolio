@@ -34,17 +34,23 @@ export default async function Home({params}: {params: Promise<{locale: Locale}>}
     <div>
       <NavBar locale={locale}/>
       {/* projects */}
-      <div className="flex flex-col items-center">
+      <div id="Projects" className="flex flex-col items-center">
         <h2 className="text-3xl text-center mt-20">{text[locale]["ProjectsPage"]["title"]}</h2>
         {projects}
       </div>
-      <div className="flex flex-col items-center">
+      {/* about */}
+      <div id="About" className="flex flex-col items-center">
         <div className="w-3/4 m-4">
-          <h2 className="text-3xl text-center mt-20">{text[locale]["About"]["title"]}</h2>
+          <h2 className="text-3xl text-center mt-20 mb-6">{text[locale]["About"]["title"]}</h2>
           <p className="text-lg">
             {text[locale]["About"]["content"]}
           </p>
         </div>
+      </div>
+      {/* contact me */}
+      <div id="Contact" className="flex flex-col items-center">
+        <h2 className="text-3xl text-center mt-20 mb-6">{text[locale]["Contact"]["title"]}</h2>
+        <p>{text[locale]["Contact"]["content"]}</p>
       </div>
     </div>
   );
