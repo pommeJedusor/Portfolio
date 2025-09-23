@@ -10,7 +10,7 @@ export default async function Home({params}: {params: Promise<{locale: Locale}>}
     const links = [];
     for (let j=0;j<text[locale]["ProjectsPage"]["Projects"][i]["github-links"].length;j++){
       links.push(
-        <a key={j} href={text[locale]["ProjectsPage"]["Projects"][i]["github-links"][j]["link"]}className="text-red-700 hover:text-red-900">
+        <a key={j} href={text[locale]["ProjectsPage"]["Projects"][i]["github-links"][j]["link"]} className="text-red-700 hover:text-red-900">
           {j==0 ? ' ' : ', '}{text[locale]["ProjectsPage"]["Projects"][i]["github-links"][j]["text"]}
         </a>
       );
@@ -34,6 +34,7 @@ export default async function Home({params}: {params: Promise<{locale: Locale}>}
   return (
     <div>
       <NavBar locale={locale}/>
+      <a className="mt-3 block w-full text-lg text-center text-red-700 hover:text-red-900" href={text[locale]["other-language-link"]}>{text[locale]["other-language-link-text"]}</a>
       {/* projects */}
       <div id="Projects" className="flex flex-col items-center">
         <h2 className="text-3xl text-center mt-20">{text[locale]["ProjectsPage"]["title"]}</h2>

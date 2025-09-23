@@ -1,6 +1,8 @@
 export type Locale = "en"|"fr";
 export const text = {
   "en": {
+    "other-language-link": "./fr",
+    "other-language-link-text": "voir la page en français?",
     "Homepage": {
       "title": "Hello!"
     },
@@ -96,6 +98,8 @@ export const text = {
     },
   },
   "fr": {
+    "other-language-link": "./en",
+    "other-language-link-text": "see the page in english?",
     "Homepage": {
       "title": "Salout!"
     },
